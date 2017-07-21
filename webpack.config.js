@@ -40,9 +40,14 @@ module.exports = {
 					    loader: "style-loader" // creates style nodes from JS strings 
 					}, {
 					    loader: "css-loader" // translates CSS into CommonJS 
-					}, {
-						loader: 'postcss-loader'	
-					}, {
+					},  {
+						loader: 'postcss-loader', // postcss loader so we can use autoprefixer
+				        options: {
+				        	config: {
+				            	path: 'postcss.config.js'
+				         	}
+			        }
+			      }, {
 					    loader: "sass-loader" // compiles Sass to CSS 
 				}]
 			},
