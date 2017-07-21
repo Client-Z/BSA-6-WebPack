@@ -1,0 +1,18 @@
+$height: 30px;
+$dark_pink: #8a6363 ; 
+$margin_bottom: 10px;
+
+
+.container {
+    color: $dark_pink;
+}
+
+.container div {
+	border-bottom: dotted;
+}
+
+.container div img {
+	height: $height;
+	vertical-align: middle;
+	margin-bottom: $margin_bottom;
+}
