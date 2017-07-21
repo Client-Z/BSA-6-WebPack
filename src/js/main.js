@@ -1,4 +1,4 @@
-let UserList = require('./userList.js');
+import UserList from './userList.js';
 require('../css/style.scss');
 
 const users = [
@@ -15,5 +15,5 @@ const users = [
 
 
 
-var userListModule = new UserList(users);
+let userListModule = new UserList(users);
 userListModule.showList();
